@@ -1,0 +1,191 @@
+        .naslovi{
+			color: orange;
+			font-family: Arial;
+			border: 1px solid black;
+			padding: 3px;
+			display: inline;
+            text-align: center;
+		}
+		/* Paragrafi */
+        .tekst{
+			font-family: Arial;
+			font-size: 20px;
+
+		}
+        a:link{
+			color: orange;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited{
+			color: black;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover{
+			color: black;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		/* Sve ordered liste */
+        ol{
+			font-family: Arial;
+			font-size: 20px;
+		}
+        /* Sve unordered liste */
+        .ulista{
+            font-family: Arial;
+            font-size: 20px;
+        }
+        /* css for name on top */
+        .header{
+             font-family: Arial;
+             text-align: center;
+             font-size: 30px;
+        }
+        /* footer for kontakt page, because letters are different */
+        .header4{
+        	font-family: Arial;
+        	text-align: center;
+        	font-size: 30px;
+        	color: white;
+        }
+        /* Sivi futer na dnu 
+        .futer{
+            padding: 5px;
+            text-align: center;
+            background: #ddd;
+            font-family: courier; 
+        } footer thats not in use anymore */
+
+/* HORIZONTAL NAVIGATION */
+
+.navbar {
+  list-style-type: none;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+	float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+}
+
+.navbar li a:hover {
+	background-color: #111;
+}
+
+.navbar li a:active {
+	background-color: orange;
+}
+
+#active {
+	background-color: orange;
+}
+#active:hover {
+	background-color: darkorange;
+}
+
+/*---------------------------*/
+/* FOOTER */
+#dno li {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial;
+}
+/*------------------------*/
+/* KONTAKT STRANICA */
+/*
+#kontakt {
+	margin: 0;
+	padding: 0;
+	background: url(pozadina.jpg) no-repeat;
+	background-size: cover; 
+} */
+/* Kontakt page moving background */
+#kontakt {
+	/*background: #282828;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%; */
+	animation: Gradient 15s ease infinite; 
+	margin: 0;
+	padding: 0;
+	background: url(slike/bg3.jpg) no-repeat; 
+	background-size: cover;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+} /* ------------------------------ */
+/* KONTAKT page */
+.box {
+	width: 450px;
+	background: rgba(0, 0, 0, 0.4);
+	padding: 40px;
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	color: white;
+	font-family: 'Century Gothic',sans-serif;
+}
+.box-img {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	border: 2px solid white;
+}
+.box-img:hover {
+	border: 2px solid orange;
+}
+.box h1 {
+	font-size: 40px;
+	letter-spacing: 4px;
+	font-weight: 100;
+}
+.box h5 {
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-weight: 100;
+}
+/*
+.box p {
+	text-align: center;
+} */
+.ikonice {
+	margin: 0;
+	padding: 0;
+}
+.ikonice li {
+	display: inline-block;
+	margin: 6px;
+	list-style: none;
+}
+table,td,tr {
+    padding: 5px;
+    font-family: Arial;
+    text-align: left;
+}
+/*------------------SAJT 3-------------------*/

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Milan Simic</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+
+    <div class="header">
+        <h2>HTML & CSS</h2>
+        <p>Milan Simic</p>
+    </div>
+    <ul class="navbar">
+        <li><a href="sajt.html">Home</a></li>
+        <li><a id="active" href="sajt2.html">Page 2</a></li>
+        <li><a href="sajt3.html">Page 3</a></li>
+        <li style="float: right;"><a href="sajt4.html">Contact</a></li>
+    </ul>
+
+<h2>Sta JavaScript moze da uradi?</h2>
+
+<p>JavaScript moze da promeni HTML vrednosti.</p>
+
+<p>U ovom slucaju JavaScript menja izvor slike tj. samu sliku.</p>
+
+<button onclick="document.getElementById('myImage').src='slike/upaljena.png'">Upali svetlo</button>
+
+<img id="myImage" src="slike/ugasena.png" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='slike/ugasena.png'">Ugasi svetlo</button>
+</body>
+</html>

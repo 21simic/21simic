@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- Irrelevant
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+	<title>HTML Milan Simic</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="skript.js"></script>
+</head>
+<body>
+   <!--Navigacija sa strane  
+    <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="test.html">Stranica 2</a>
+  <a href="#">Stranica 3</a>
+  <a href="#">Stranica 4</a>
+  <a href="#info">Kontakt</a>
+</div> -->
+
+<!-- Kad kliknes na nesto to postaje aktivator za navigaciju sa strane.
+    <div id="header">
+    <span onclick="openNav()"> </span>   
+-->
+    <div id="vrh">
+    <div class="header">
+        <h2>HTML & CSS</h2>
+        <p>Milan Simic</p>
+    </div>
+    </div>
+    <ul class="navbar">
+        <li><a id="active" href="#vrh">Home</a></li>
+        <li><a href="sajt2.html">Page 2</a></li>
+        <li><a href="sajt3.html">Page 3</a></li>
+        <li style="float: right;"><a href="sajt4.html">Contact</a></li>
+    </ul>
+	<h1 style="color: orange; font-family: Arial;">HTML</h1>
+	<p class="tekst"><strong>- HTML</strong> je standardni jezik za kreiranje web stranica.<br> 
+		<strong>- HTML </strong> je skracenica za Hyper Text Markup Language.<br> 
+		<strong>- HTML </strong> opisuje strukturu web stranice pomocu oznaka-<strong>tagova</strong>.<br>
+		<strong>- HTML </strong> elementi su gradjevinski materijal za izradu web stranice. <br>
+		<strong>- HTML </strong> elementi su predstavljeni oznakama-tagovima <br>
+		<strong>- HTML </strong> oznake oznacavaju delove sadrzaja kao sto su "naslov","paragraf","tabela" itd.. <br>
+        - Internet pretrazivaci ne prikazuju HTML oznake-tagove ali ih koriste za prikazivanje sadrzaja na webu. <br>
+	</p>
+
+	<h2 class="naslovi">Na sledecem primeru prikazan je jednostavan HTML dokument</h2>
+    <p class="tekst"><xmp>
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title> Moj novi web sajt </title> 
+		</head> 
+		<body> 
+			<h1>Ovo je naslov web sajta</h1> 
+			<p>Ovo je neki tekst</p>
+		</body>
+		</html>
+	</xmp>
+	 <p>
+	
+	
+	<p class="tekst">&lt!DOCTYPE html> - Ova deklaracija definise ovaj dokument kao HTML5.</p>
+	<p class="tekst">&lthtml> - Ovo je osnovni element html stranice.</p>
+	<p class="tekst">&lthead> - Ovaj element sadrzi meta podatke o dokumentu.</p>
+	<p class="tekst">&lttitle> - Ovaj element odredjuje naslov stranice.</p>
+	<p class="tekst">&ltbody> - Ovaj element prikazuje vidljiv sadrzaj stranice.</p>
+    <p class="tekst">&lth1> - Ovaj element definise veliki naslov.</p>
+    <p class="tekst">&ltp> - Ovaj element definise paragraf.</p>
+    
+    <!-- <hr> -->
+    <div id="prva">
+    <h1 class="naslovi">HTML Osnovni elementi</h1>
+    </div>
+    <p class="tekst">- Svaki HTML dokument treba da pocne deklaracijom !Doctype <br>
+    - Svaki dokument pocinje tagom html a zavrsava se tagom /html <br>
+    - Deo html sadrzaja koji je uvek vidljiv u pretrazivacu nalazi se izmedju tagova body i /body <br>
+    <strong>- HTML naslovi</strong> se definisu od naslova najvece vaznosti (h1) pa do naslova najmanje vaznosti (h6). <br>
+    <strong>- HTML paragrafi</strong> se definisu tagovima <u>p</u> <br>
+    <strong>- HTML linkovi</strong> se definisu tagom a koji u sebi ima atribut <u>href</u>. <br>
+    <strong>- HTML slike</strong> su definisane tagom <u>img</u>. Izvorni kod <u>src</u>, alternativni tekst <u>alt</u> i visina i sirina slike su dati kao atributi.
+    </p>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Elementi</h1>
+    <p class="tekst"><strong>- HTML</strong> elementi se uglavnom sastoje od pocetnog i zavrsnog taga sa sadrzajem koji je umetnut izmedju njih. <br>
+    	Element je sve sto se nalazi izmedju startnog i zavrsnog taga.
+    	<xmp><p>Ovo je paragraf i predstavlja html element</p></xmp>
+    	<p class="tekst"><strong>- HTML</strong> elementi koji nemaju sadrzaj zovu se prazni elementi, prazni element nema zavrsni tag kao sto je npr br tag</p>
+    </p>
+    
+    <!-- <hr> -->
+    <div id="druga">
+    <h1 class="naslovi">HTML Atributi</h1>
+    </div>
+    <p class="tekst">1) Svi <strong>HTML</strong> elementi mogu imati atribute.<br>
+    	2) Atributi prizaju dodatne informacije o elementu.<br>
+    	3) Atributi su uvek naznaceni u pocetnoj oznaci.<br>
+    	4) Atributi obicno dolaze u parovima ime-vrednost, kao npr. ime="<em>vrednost</em>".
+    </p>
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>href</strong></span></p>
+    <p class="tekst"><strong>HTML</strong> linkovi su definisani tagom a. Adresa linka je navedena u atributu <strong>href</strong></p>
+        <xmp><a href="http://www.ets.edu.rs">Sajt skole</a></xmp>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>src</strong></span></p>
+    <p class="tekst"> Slike u html-u su definisane tagom <strong>img</strong>. Ime fajla koji bi predstavljao sliku navedeno je u atributu <strong>src</strong>
+    	<xmp><img src="ime_slike.jpg"></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atributi <span style="color: orange;"><strong>width</strong> i <strong>height.</strong></span></p>
+    <p class="tekst"> Dimenzija slike u html-u podesava se pomocu ovih atributa.
+    	<xmp><img src="ime_slike.jpg" width="500" height="600"></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>alt</strong></span></p>
+    <p class="tekst"> U atributu <strong>alt</strong> se nalazi alternativni tekst koji bi bio ispisan u koliko je slika obrisana sa servera ili iz nekog drugog razlogane moze da se ucita u pretrazivacu. 
+        <xmp><img src="ime_slike.jpg" alt="alternativni tekst"></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>style</strong></span></p>
+    <p class="tekst">Atribut <strong>style</strong> se koristi za odredjivanje stila elemenata kao sto je boja, font, velicina itd. 
+        <xmp><p style="color: blue;">Ovo je paragraf plave boje</p></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>lang</strong></span></p>
+    <p class="tekst">Jezik dokumenta moze biti deklarisan u html tagu. Jezik je deklarisan atributom <strong>lang</strong> Deklaracija jezika je vazna za citace ekrana kao i za pretrazivace.
+    	<xmp><html lang="en-US"></html></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>title</strong></span></p>
+    <p class="tekst">U ovom primeru smo atribut <strong>title</strong> dodali paragrafu. Tekst koji se nalazi u atributu ce biti prikazan onda kada kursor misa dovedemo preko teksta koji se nalazi u paragrafu.
+    	<xmp><p title="Ovo je neko obavestenje">Ovo je paragraf</p></xmp> </p>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>id</strong></span></p>
+    <p class="tekst">Da bi definisali poseban stil za odredjeni element dodacemo mu atribut <strong>id.</strong>
+        <xmp><p id="plavi">Ovo je plavi tekst</p></xmp>
+    <p class="tekst">Zatim definisemo stil sa odredjenim atributom <strong>id.</strong></p>
+        <xmp>#plavi { color: blue; }</xmp>
+
+    <p class="tekst" style="font-size: 25px">Atribut <span style="color: orange;"><strong>class</strong></span></p>
+    <p class="tekst">Da bi definisali stil za posebnu vrstu elementa dodajemo atribut <strong>class.</strong>
+        <xmp><p class="plavi">Ovo je plavi tekst</p>
+        .plavi { color: blue; } (CSS) </xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML &lthead> element</h1>
+    <p class="tekst"><strong>HTML</strong> &lthead> element nema nikakve veze sa naslovom vec je to kontejner za meta podatke.<br> Meta podaci su podaci koji opisuju HTML dokument i nisu vidljivi u pretrazivacu (korisnicima) a nalaze se izmedju tagova &lthtml> i &ltbody>.
+    	<xmp>              <head>
+    		 <title>Ovde se nalaze meta podaci</title>
+    		 <meta charset="utf-8">
+              </head>
+        </xmp>
+
+    <h1 class="naslovi">HTML Formatiranje teksta</h1> 
+    <p class="tekst"><strong>HTML</strong> naslovi i paragrafi se mogu menjati pomocu specijalnih tagova: <br> <br>
+        &ltb> - Boldovani tekst <br>
+        &ltstrong> - Veoma boldovan tekst <br>
+        &lti> - Zakrivljen tekst <br>
+        &ltem> - Naglasen tekst <br>
+        &ltmark> - Markiran tekst <br>
+        &ltsmall> - Mala slova <br>
+        &ltdel> - Prekrizen tekst <br>
+        &ltins> - Podvucen tekst <br>
+        &ltsub> - Subscript tekst <br>
+        &ltsup> - Superscript tekst </p> 
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Styles</h1> 
+    <p class="tekst">Podesavanje stila na <strong>HTML</strong> elementu moze se postici pomocu atributa <strong>style</strong>.<br>
+    	Atribut <strong>style</strong> ima sledecu sintaksu: 
+    	<xmp> <ime_taga style="svojstvo: vrednost;"> </xmp>
+    <p class="tekst">Primer - Svojstvo <span style="color: aqua;"><em>background-color</em></span> definise boju pozadine kod html elementa. </p>
+    	<xmp> <body style="background-color: gray;"> </xmp>
+    </p>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Text Color</h1> 
+    <p class="tekst">Svojstvo color odredjuje boju html elementa</p>
+    <xmp><h1 style="color: red;">Ovo je naslov crvene boje</h1></xmp>
+    <xmp><p style="color: powderblue;">Ovo je paragraf svetlo plave boje</p></xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Fontovi</h1> 
+    <p class="tekst">Svojstvo <span style="color: aqua;"><em>font-family</em></span> definise font slova koja koristimo u html-u. </p>
+    <xmp><h2 style="font-family: verdana;">Ovo je neki naslov h2</h2></xmp>
+    <xmp><h3 style="font-family: courier;">Ovo je neki drugi naslov</h3></xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Velicina teksta</h1> 
+    <p class="tekst">Svojstvo <span style="color: aqua;"><em>font-size</em></span> definise velicinu teksta u html elementu. </p>
+    <xmp><h1 style="font-size: 500%;">Ovo je naslov</h1></xmp>
+    <xmp><p style="font-size: 300%;">Ovo je paragraf</p></xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML Text aligment</h1> 
+    <p class="tekst">Svojstvo <span style="color: aqua;"><em>text-align</em></span> definise horizontalno poravnanje teksta HTML elementa.</p>
+    <xmp><h1 style="text-align: center;">Ovaj naslov je centriran</h1></xmp>
+    <xmp><p style="text-align: center;">Ovaj paragraf je centriran</p></xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML element &ltabbr> za skracenice</h1> 
+    <p class="tekst">Element &ltabbr> definise skracenicu ili akronim.<br>
+    Skracenice mogu da daju veoma korisne informacije pretrazivacima.</p>
+    <xmp><p>Nasa <abbr title="Eleketrotehnicka skola-Mihajlo Pupin">ETS</abbr>Osnovana je 1950. godine</p></xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML element &ltadress></h1> 
+    <p class="tekst">HTML element &ltadress> definise podatke o autoru ili vlasniku teksta ili dokumenta, i obicno je prikazan kurzivom <em>(italic)</em>.<br>Vecina pretrazivaca ce dodati prelomne linije pre i posle elementa.</p>
+    <xmp>    <adress>
+    	Pisac Milan Simic. 
+    	Posetite web sajt: 
+    	www.ets.edu.rs 
+    	Zemunska BB, Gornja Gusterica 
+    	Srbija
+    </adress> </xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">HTML komentari</h1> 
+    <p class="tekst">Da bi u svom html dokumentu dodali komentar koristicemo sledecu sintaksu:</p>
+    <xmp><!--Ovo je komentar--></xmp>
+    <p class="tekst">Obratite paznju da je na pocetku taga znak ! a na kraju ga nema.<br>
+    Pretrazivac ne prikazuje komentare ali su oni bitni da bi se dokumentovao html kod i pomazu pri pisanju podsetnika i ostalih komentara za  odrzavanje koda. </p>
+    <xmp><p>Ovo je paragraf</p>
+<!--Podestnik o ostalim informacijama--> </xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">Stilizovanje HTML-a pomocu CSS-a</h1> 
+    <p class="tekst"><strong>- CSS</strong> je standard za Cascading Style Sheet.<br>
+    	<strong>- CSS</strong> opisuje kako ce html biti prikazan u pretrazivacu, na papiru ili nekom drugom medijumu.<br>
+    On moze biti dodat u html na 3 nacina: </p>
+    <ol>
+    	<li><strong>Inline</strong> - pomocu atributa <strong>style</strong></li>
+    	<li><strong>Internal</strong> - koristeci &ltstyle> element u &lthead> sekciji.</li>
+    	<li><strong>External</strong> - koristeci eksterni <strong>CSS</strong> fajl.</li>
+    </ol>
+    <p class="tekst"><strong>Inline CSS</strong> se koristi za primenu jednostavnog stila na jedan html element. </p>
+    	<xmp><h1 style="color: blue;">Ovo je naslov plavi</h1></xmp>
+    <p class="tekst">Ovaj primer pokazuje kako se preko CSS-a menja boja nekog (h1) elementa. <br> <br>
+    	<strong>Internal CSS</strong> se koristi za definisanje stila za jednu HTML stranicu i definisan je u odeljku &lthead> unutar elementa &ltstyle> </p>
+    	<xmp>     <style>
+    	body { background-color: powderblue; }
+    	h1 { color: blue; }
+    	p { color: red; }
+    </style> </xmp>
+    <p class="tekst"><strong>External CSS</strong> je nacin koji se koristi najcesce i sluzi za definisanje vise stranica.</p>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">Boje linkova</h1> 
+    <p class="tekst">Sto se tice boje linkova ovako bi se one pokazale u pregledacu podrazumevano: </p>
+    <ul class="ulista">
+        <li>link koji nije posecen je plave boje i podvucen je</li>
+        <li>link koji je posecen je podvucen i ljubicaste je boje</li>
+        <li>aktivan link je crvene boje i podvucen je</li>
+    </ul>
+    <p class="tekst">Sve te podrazumevane vrednosti mozemo promeniti pomocu CSS-a</p>
+    <xmp>  <style>
+        a:link { color: green;    *Za sam link
+                 background-color: transparent;
+                 text-decoration: none; 
+            }
+        a:visited { color: pink;    *Kada je link posecen
+                    background-color: transparent; 
+                    text-decoration: none;
+            }
+        a:hover { color: red;    *Kada misem predjemo preko linka
+                  background-color: transparent; 
+                  text-decoration: underline;
+              }
+        a:active { color: yellow;    *Kada je link u toku otvaranja 
+                   background-color: transparent;
+                   text-decoration: underline;
+               }
+    </style>
+        </xmp>
+
+    <!-- <hr> -->
+    <h1 class="naslovi">CSS svojstva okvira</h1> 
+    <p class="tekst"><strong>CSS</strong> border svojstvo definise okvir oko html elementa</p>
+    <xmp> p { border: 1px solid blue; } </xmp>
+    <p class="tekst"><strong>CSS</strong> padding svojstvo definise prostor izmedju teksta i okvira</p>
+    <xmp> p { border: 1px solid blue; 
+              padding: 30px; } 
+           </xmp>
+    <p class="tekst"><strong>CSS</strong> margin svojstvo definise prostor izvan okvira</p>
+    <xmp> p { border: 1px solid blue; 
+              margin: 50px; }
+           </xmp>
+   <div id="dno"> 
+    <ul class="navbar">
+        <li style="float: right;">Copyright &copy Milan Simic 2019</li>
+    </ul>
+   </div>
+
+</body>
+</html>
